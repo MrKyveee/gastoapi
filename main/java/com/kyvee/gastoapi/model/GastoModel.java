@@ -2,6 +2,8 @@ package com.kyvee.gastoapi.model;
 
 import jakarta.persistence.*;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "tb_gasto")
 public class GastoModel {
@@ -12,7 +14,7 @@ public class GastoModel {
     @Column(nullable = false, columnDefinition = "TEXT")
     private String descricao;
     @Column(nullable = false, precision = 10, scale = 2)
-    private double valor;
+    private BigDecimal valor;
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private CategoriaGasto categoria;
@@ -31,11 +33,11 @@ public class GastoModel {
         this.descricao = descricao;
     }
 
-    public double getValor() {
+    public BigDecimal getValor() {
         return valor;
     }
 
-    public void setValor(double valor) {
+    public void setValor(BigDecimal valor) {
         this.valor = valor;
     }
 
