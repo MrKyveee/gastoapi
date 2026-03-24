@@ -28,12 +28,12 @@ public class GastoController {
         return gastoService.listarGastos();
     }
 
-    @GetMapping("/categoria{categoria}")
+    @GetMapping("/categoria/{categoria}")
     public ResponseEntity<List<GastoModel>> listarGastoCategoria(@PathVariable CategoriaGasto categoria) {
         return gastoService.listarGastosCategoria(categoria);
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<String> deletarGasto(@PathVariable Integer id) {
         return gastoService.deletarGasto(id);
     }
