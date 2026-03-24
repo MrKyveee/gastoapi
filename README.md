@@ -1,6 +1,6 @@
 # 💰 GastoAPI - Gestão Financeira
 
-O **GastoAPI** é o motor de controle financeiro para sistemas multi-tenant focados em prestadores de serviços, como barbearias e guinchos. Ele permite o registro, organização por categorias padronizadas e gestão completa do fluxo de caixa.
+O **GastoAPI** é uma API simples de controle de gastos desenvolvida com foco em aprendizado. Ela permite registrar despesas, organizar por categorias e gerenciar informações básicas de forma estruturada, servindo como base para praticar conceitos de desenvolvimento de APIs REST.
 
 ---
 
